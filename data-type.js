@@ -104,12 +104,96 @@ console.log(typeof "1998");
 console.log(25);
 console.log(3.14);
 
+/* 
+    ? Booleans
+    * binary value
+    * either true (on) or false (off)
+    * *Examples of falsey values:
+        *0
+        *undefined
+        *null
+        *NaN
+        *""
+*/
 
+console.log(true);
+console.log(false);
+console.log(2 == 2);
+console.log(2 == 5);
 
+// Boolean() interface retursn whether value is truthy or falsey
+console.log(Boolean(1)); // returned true
+console.log(Boolean(0)); // returned false
+console.log(Boolean(" ")); // returned false
+console.log(Boolean(null)); // returned false
+console.log(Boolean(undefined)); // returned false
 
+/* 
+    ? Type Coercion
+    * JS is a weakly typed programming language (duck typed)
+    * doesn't require data type definition
+    * comparison operator (==) performs type coercion before resolving expression
+        * will check values but NOT data types
+    * we can use strict equality (===) to avoid type coercion
+        * will check values AND data types
+*/
 
+/* 
+    ? Not a Number (NaN)
+    * triggered when performing operations with numbers and non-numbers
+    * used when performing mathmatical computations that don't make sense
+    ! know what type coercion is but DO NOT USE IT!
+*/
 
+console.log(undefined + 5); // returns NaN
 
+/* 
+    ? Null and Undefined
+    * null - placeholder for something
+    * undefinec - lack of existence
+    * 0 - ran out of stuff?
+*/
 
+/* 
+    ? Operators
+    * addition (+)
+    * subtraction (-)
+    * multiply (*)
+    * division (/)
+    * exponent (**)
+    * dot (.)
+    * modula (%)
+    * assignment (=) <-- single
+    * comparison (==) <-- double
+    * strict comparison (===) <-- triple
+    * is not equal to or is strictly not equal to (!= OR !==)
+*/
 
+// Dot or Member Access Operator
+
+console.log("Brandon Hoffey".length);
+console.log("brandon hoffey".toUpperCase());
+
+// Modula --> remainder of long division
+
+console.log(10 / 2);
+console.log(10 % 2);
+
+// Assignment
+
+let name = "Brandon"; // assigns value of "brandon" (str) to the variable name
+console.log(name);
+
+// comparison
+console.log(name == "Brandon");
+
+// strict comparison
+console.log(525 === "525");
+
+// Is not equal to --> flips values
+
+console.log(2 != 2); // returns false (even though it is true)
+console.log(!true); // returns false (even though it is true)
+
+// Real life example
 
