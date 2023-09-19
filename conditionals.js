@@ -111,22 +111,70 @@ let alarm = false;
     // console.log("The alarm is likely off");
 // }
 
-let age = 20
+let age = 15
 
-if (age < 16) {
-    console.log("You cannot drive");
-} else if (age >= 16 && age <= 18) {
-    console.log("You can drive, but you cannot drink");
-} else if (age >= 18 && age <= 20) {
-    console.log("You can vote, but not drink");
-} else if (age >= 21) {
-    console.log("You may drink now");
-}  else {
-    console.log("That's not a number");
-}
+// if (age < 16) {
+//     console.log("You cannot drive");
+// } else if (age >= 16 && age <= 18) {
+//     console.log("You can drive, but you cannot drink");
+// } else if (age >= 18 && age <= 20) {
+//     console.log("You can vote, but not drink");
+// } else if (age >= 21) {
+//     console.log("You may drink now");
+// }  else {
+//     console.log("That's not a number");
+// }
 
 /* 
     ! Important Thought
     * if you want your condition to display any possibel match, create seperate IF statements
     * if you want your condition to display ONE EXACT match, chain your conditional statments
 */
+
+/* 
+    ? Ternaries
+    * an expression
+    * a quick way of creating if/else conditional
+    * commonly used to check a quick condition
+*/
+
+let ignition = true
+
+ignition ? console.log("Car is ready to start") : console.log("Turn ignition on");
+
+// ? Chaining Ternaries
+
+let season = 2
+
+if (season == 1) {
+    console.log("Spring");
+} else if (season == 2) {
+    console.log("Summer");
+} else if (season == 3) {
+    console.log("Autumn");
+} else if (season == 4) {
+    console.log("Winter");
+}
+
+season == 1 ? console.log("Spring")
+            : season == 2 ? console.log("Summer")
+            : season == 3 ? console.log("Autumn")
+            : season == 4 ? console.log("Winter")
+            : null 
+
+// ! If you do not have an else statement, you must use a null to avoid SYntaxError
+
+age = "potato"
+
+age < 16 ? console.log("You cannot drive")
+            : age >= 16 && age < 18 ? console.log("You can drive, but not drink")
+            : age >= 18 && age < 21 ? console.log("You can vote, but cannot drink")
+            : age > 21 ? console.log("Party on!")
+            : console.log("Please enter a number")
+
+/* 
+    ? Switch Statements
+    * executes a block of code dependent upon a different case
+    * we ask a question requiring specific response determined by our answer
+*/
+
